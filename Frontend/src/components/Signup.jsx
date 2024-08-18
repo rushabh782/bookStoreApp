@@ -23,7 +23,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("http://localhost:4001/user/signup", userInfo)
+      .post("https://bookstoreapp-backend-relz.onrender.com", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
